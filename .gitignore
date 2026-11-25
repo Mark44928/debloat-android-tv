@@ -1,0 +1,15 @@
+# .gitignore — debloat-android-tv
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temp / reports
+*.log
+.tmp/
+*.bak
