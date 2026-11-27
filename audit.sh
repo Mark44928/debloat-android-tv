@@ -8,6 +8,10 @@ case "${1:-}" in
     echo "  --json   print a machine-readable report"
     exit 0
     ;;
+  --version|-V)
+    echo "audit.sh 1.0.0"
+    exit 0
+    ;;
   --json) JSON=1 ;;
   "") JSON=0 ;;
   *) echo "unknown option: $1 (try --help)" >&2; exit 2 ;;
