@@ -13,6 +13,10 @@ case "${1:-}" in
     echo "  --output FILE   write the HTML report to FILE instead of audit-report.html"
     exit 0
     ;;
+  --version|-V)
+    echo "report.sh 1.0.0"
+    exit 0
+    ;;
   --output)
     [ -n "${2:-}" ] || { echo "report.sh: --output needs a file" >&2; exit 2; }
     output="$2"

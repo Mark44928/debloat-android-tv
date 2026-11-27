@@ -14,6 +14,10 @@ case "${1:-}" in
     echo "  --dry-run, -n   show what would be restored without changing anything"
     exit 0
     ;;
+  --version|-V)
+    echo "restore.sh 1.0.0"
+    exit 0
+    ;;
   "") ;;
   *)
     echo "unknown option: $1 (try --help)" >&2
